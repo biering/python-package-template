@@ -10,24 +10,33 @@ Use one of the following options to use the template.
 ## Install Dependencies
 
 1. Install **Python3** and **pip3**
-2. Install pipenv with `pip install pipenv`
+2. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+3. (Update) To update conda run `conda update conda`
 
 ### After Checkout
 
+Run this command to create the environment:
+
 ```bash
-pipenv install -e .
+conda env create -f environment.yml
 ```
 
-### Install Package
+### Activate/Deactivate
+
+To activate the created environment:
 
 ```bash
-pipenv install [package]
+conda activate env-name
 ```
 
-```bash
-pipenv uninstall [package]
-```
+To deactivate the actual environment:
 
 ```bash
-pipenv lock
+conda deactivate
+```
+
+To list all conda environments:
+
+```bash
+conda env list
 ```
