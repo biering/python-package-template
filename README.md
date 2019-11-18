@@ -18,7 +18,7 @@ Use one of the following options to use the template.
 Run this command to create the environment:
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml --prefix ./env
 ```
 
 ### Activate/Deactivate
@@ -26,7 +26,7 @@ conda env create -f environment.yml
 To activate the created environment:
 
 ```bash
-conda activate env-name
+conda activate ./env
 ```
 
 To deactivate the actual environment:
@@ -39,4 +39,8 @@ To list all conda environments:
 
 ```bash
 conda env list
+# or
+conda info --envs
 ```
+
+To remove the environment just remove the `.env` dictionary.
