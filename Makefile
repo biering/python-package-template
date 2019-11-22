@@ -1,5 +1,11 @@
 init:
-    conda env create -f environment.yml
+	conda env create -f environment.yml --prefix ./env
+
+activate:
+	conda activate ./env
+
+deactivate:
+	conda deactivate
 
 test:
-    py.test tests
+	py.test tests
