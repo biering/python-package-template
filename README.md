@@ -1,5 +1,11 @@
 # Python Package Template
 
+A minimal template for a Python package w/ Conda.
+
+|python|pip|
+|:--:|:--:|
+|3.7|19.3.1|
+
 ## Usage
 
 Use one of the following options to use the template:
