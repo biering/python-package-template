@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+
+disable=invalid-name
+[FORMAT]
+
+max-line-length=140
+max-module-lines=1000
